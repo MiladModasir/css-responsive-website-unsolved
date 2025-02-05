@@ -13,10 +13,24 @@
     width: 100px;
     text-align: right;
   }
-  .top-navigation:hover{
-    color: #fcfbfb;
-    background-color: rgb(196, 193, 193);
+  .top-navigation .Home:hover{
+    background-color:white;
+    color: black;
   }
+  .top-navigation .contacts:hover{
+    background-color:white;
+    color: black;
+  }
+  .top-navigation .team:hover{
+    background-color:white;
+    color: black;
+  }
+  .teammate-social-icons .facebook:active{
+    background-color: #5a71f0;
+    color: #eee;
+  }
+  
+  
 
   /* footer .social-icons .instagram {
     color: #eee;
@@ -99,10 +113,41 @@
   }
   .footer-contacts{
     display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:  auto;
+    gap: 180px;
+    flex-wrap: wrap;
   }
   .teammates-list-wrapper {
     display: flex;
+}
+.social-icons span{
+  display: none;
 } 
+.footer-contacts .phones{
+  justify-content: flex-end;
+  align-items: center;
+}
+.teammate-social-icons .facebook:hover{
+  background-color: #5a71f0;
+  color: #eee;
+}
+.teammate-social-icons .twitter:hover{
+  background-color: #5a71f0;
+  color: #eee;
+}
+.teammate-social-icons .linkedin:hover{
+  background-color: #5a71f0;
+  color: #eee;
+}
+.social-icons
+.facebook 
+.icon:hover{
+  background-color: #eee;
+  color: #0008ff;
+}
+}
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 
 
@@ -120,7 +165,7 @@
 
     .portfolio-img-wrapper{
       width: 100%;
-      padding: 16px;
+    padding: 16px;
     }
 
 .section-info{
@@ -132,6 +177,10 @@
 .section-info .subtext{
   padding: 16px;
   margin: auto;
+
+}
+.teammates-content .subtext{
+  width: 360px;
 }
 
 .item-title{
@@ -142,8 +191,8 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  margin: auto;
-  padding: 16px;
+  
+  
 } 
 .teammate{
   flex-direction: row;
@@ -154,15 +203,12 @@
 .teammate-info, .teammate-data{
 align-items: center;
 margin: auto;
-padding: 16px;
-}
-.teammate-img-wrapper{
-  padding: 16px;
 }
 .teammate-social-icons{
-  gap: 20px;
+  gap: 10px;
   flex-direction: row;
 }
+
 footer .social-icons {
   display: flex;
   flex-direction: column;
@@ -250,7 +296,7 @@ footer .social-icons .icon {
   border-top: 1px solid #2e2e2e;
   padding-top: 30px;
 }
-
 }
 
-}
+
+
